@@ -1,7 +1,7 @@
 Created by testinium on 17.10.2020
 
 This is a concept file with following syntax for each concept.
-# bilet alma işlemleri yapılır
+# uçus arama işlemleri yapılır
 * pop up ları kapat
 * ucuz ucuş ara butonuna tıklanır
 * nereden butonuna tıklanır ve "Ankara" havalimanı aranır
@@ -9,4 +9,12 @@ This is a concept file with following syntax for each concept.
 * yön bilgisi seçilir
 * tarih bilgisi seçilir
 * uçuş aranır
+
+
+# bilet seçilir
+* çarpı butonlarına tıklanır
+* en üstte gelen bilet seçilir
+* bagaj ile alakalı pop up kapatılır
+* ekonomik paket seçilir ve devam butonuna tıklanır
+* fırsat ekranı geçilir
 

@@ -13,9 +13,8 @@ public class BuyTicketStepImpl extends BaseMethods {
     public void closeThePopUpp() {
         waitUntilElementAppear(CLOSE_POP_UP);
         clickElement(CLOSE_POP_UP);
-        WebElement hes;
-        hes = findElement(CLOSE_HES);
-        if (hes.isDisplayed()==true) {
+        WebElement hes = findElement(CLOSE_HES);
+        if (hes.isDisplayed() == true) {
             waitUntilElementAppear(CLOSE_HES);
             clickElement(CLOSE_HES);
 
@@ -35,7 +34,7 @@ public class BuyTicketStepImpl extends BaseMethods {
         waitUntilElementAppear(NEREDEN);
         clickElement(NEREDEN);
         waitUntilElementAppear(NEREDEN_YAZ);
-        sendKeys(NEREDEN_YAZ,key);
+        sendKeys(NEREDEN_YAZ, key);
         waitUntilElementAppear(NEREDEN_TIKLA);
         clickElement(NEREDEN_TIKLA);
     }
@@ -43,7 +42,7 @@ public class BuyTicketStepImpl extends BaseMethods {
     @Step("nereye butonuna tıklanır ve <key> havalimanı aranır")
     public void nereyeGideceksin(String key) {
         waitUntilElementAppear(NEREYE);
-        sendKeys(NEREYE,key);
+        sendKeys(NEREYE, key);
         waitUntilElementAppear(NEREYE_TIKLA);
         clickElement(NEREYE_TIKLA);
     }
@@ -62,6 +61,7 @@ public class BuyTicketStepImpl extends BaseMethods {
         clickElement(TARIH_SEC);
         waitUntilElementAppear(TARIH_OK);
         clickElement(TARIH_OK);
+
     }
 
 
@@ -72,4 +72,41 @@ public class BuyTicketStepImpl extends BaseMethods {
     }
 
 
+    @Step("çarpı butonlarına tıklanır")
+    public void carpiButton() {
+        waitUntilElementAppear(CLOSE_PCR);
+        clickElement(CLOSE_PCR);
+        waitUntilElementAppear(CLOSE_POP);
+        clickElement(CLOSE_POP);
+    }
+
+    @Step("en üstte gelen bilet seçilir")
+    public void enUstBilet() {
+        waitUntilElementAppear(EN_UST_BILET);
+        clickElement(EN_UST_BILET);
+    }
+
+
+    @Step("bagaj ile alakalı pop up kapatılır")
+    public void bagajPopUp() {
+        waitUntilElementAppear(BAGAJ_POP_UP);
+        clickElement(BAGAJ_POP_UP);
+    }
+
+
+    @Step("ekonomik paket seçilir ve devam butonuna tıklanır")
+    public void ekoPaket() {
+        waitUntilElementAppear(EKO_PAKET);
+        clickElement(EKO_PAKET);
+        waitUntilElementAppear(DEVAM_BUTTON);
+        clickElement(DEVAM_BUTTON);
+
+    }
+
+
+    @Step("fırsat ekranı geçilir")
+    public void devamFirsat() {
+        waitUntilElementAppear(FIRSAT_DEVAM_BUTTON);
+        clickElement(FIRSAT_DEVAM_BUTTON);
+    }
 }
